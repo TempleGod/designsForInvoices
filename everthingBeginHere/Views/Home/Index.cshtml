@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -13,12 +12,36 @@
     <script src="~/Scripts/APP/appStart.js"></script>
     <script src="~/Scripts/APP/controllers/controllers.js"></script>
     <script src="~/Scripts/APP/directives/directives.js"></script>
+    <script src="~/Scripts/APP/services/services.js"></script>
+    <style>
+        .postSelect {
+            padding: 5px;
+        }
+    </style>
+
 </head>
 <body ng-app="invoice">
-    <div ng-controller="test">
-        
-        <ez-select herf="hahahhaha"></ez-select>
-    </div>
+
+
+    <post-select sourceherf="/Home/GetList" attrname="ComType"></post-select>
+    <post-select sourceherf="/Home/GetList" attrname="ComType"></post-select>
+
+    @*<post-table sourceherf="/Home/GetTable">
+        <tr>
+            <td><input type="text" value="123" /> </td>
+            <td><input type="text" value="123" /></td>
+            <td><input type="text" value="123" /></td>
+
+        </tr>
+    </post-table>*@
     
+    <test>
+        
+    </test>
+    
+        <script>
+
+        </script>
+
 </body>
 </html>

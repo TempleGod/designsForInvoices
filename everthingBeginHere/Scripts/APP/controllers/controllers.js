@@ -1,8 +1,11 @@
 ﻿'use strict'
 var controllers = angular.module("invoice.controllers", []);
-controllers.controller("test", function ($scope) {
-    $scope.name = "hellow";
-});
+controllers.controller("test", ["$scope","$http",function ($scope,$http) {
+    //$http.post('/Home/GetList').success(function (data) {
+    //    $scope.lists =data;
+    //});
+    
+}]);
 
 
 
@@ -22,10 +25,4 @@ controllers.controller("test", function ($scope) {
 
 
 
-
-
-
-
-
-var services = angular.module("invoice.services", []);
 var filters = angular.module("invoice.filters", []);
